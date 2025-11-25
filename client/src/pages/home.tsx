@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useLocation } from "wouter";
-import { Calendar, Clock, MapPin, Users, Sparkles, Trophy, Music } from "lucide-react";
+import { Calendar, Clock, MapPin, Users, Sparkles, Trophy, Music, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import logoUrl from "@assets/ChatGPT Image Nov 20, 2025, 11_08_58 PM_1764070932389.png";
@@ -228,6 +228,31 @@ export default function Home() {
               <span className="text-primary">•</span>
               <a href="tel:09038114850" className="hover:text-primary transition-colors" data-testid="link-contact-2">
                 09038114850
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-sm text-muted-foreground mb-2">Follow Us</p>
+            <div className="flex items-center justify-center gap-4">
+              <a
+                href="https://www.instagram.com/regalstargym/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Regal Star Gym on Instagram"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+
+              <a
+                href="https://www.facebook.com/profile.php?id=61583355857832"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Regal Star Gym on Facebook"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Facebook className="w-5 h-5" />
               </a>
             </div>
           </div>

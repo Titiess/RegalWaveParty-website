@@ -127,7 +127,7 @@ export default function Purchase() {
               <span className="text-primary">Purchase</span> Ticket
             </CardTitle>
             <CardDescription className="text-base">
-              Wave & Vibe Pool Party - December 7, 2025
+              Wave & Vibe Pool Party - December 6, 2025
             </CardDescription>
           </CardHeader>
           
@@ -209,7 +209,9 @@ export default function Purchase() {
                       <span className="text-2xl font-bold text-primary">₦{selectedPrice.toLocaleString()}</span>
                     </div>
                     <p className="text-xs text-muted-foreground">
-                      Early Bird Special - Save ₦3,000 from gate price
+                      {selectedPrice === 5000
+                        ? 'Early Bird Special - Save ₦3,000 from gate price'
+                        : 'Early Bird Special - Save ₦5,000 from gate price'}
                     </p>
                   </div>
                 )}
